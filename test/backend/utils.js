@@ -234,7 +234,8 @@ export const mysqlConnection = {
     password: 'connecttoplotly',
     host: 'falcon-test-mysql.c52asitjzpsx.us-east-1.rds.amazonaws.com',
     port: 3306,
-    database: 'plotly_datasets'
+    database: 'plotly_datasets',
+    mock: true
 };
 export const mariadbConnection = {
     dialect: 'mariadb',
@@ -242,7 +243,8 @@ export const mariadbConnection = {
     password: 'connecttoplotly',
     host: 'mariadb-test-mysql.c52asitjzpsx.us-east-1.rds.amazonaws.com',
     port: 3306,
-    database: 'plotly_datasets'
+    database: 'plotly_datasets',
+    mock: true
 };
 export const redshiftConnection = {
     dialect: 'redshift',
@@ -250,7 +252,8 @@ export const redshiftConnection = {
     password: 'Qmbdf#3DU]pP8a=CKTK}',
     host: 'sql-connector-test.cfiaqtidutxu.us-east-1.redshift.amazonaws.com',
     port: 5439,
-    database: 'plotly_datasets'
+    database: 'plotly_datasets',
+    mock: true
 };
 export const mssqlConnection = {
     dialect: 'mssql',
@@ -260,18 +263,21 @@ export const mssqlConnection = {
     instanceName: '',
     port: 1433,
     database: 'plotly_datasets',
-    encrypt: true
+    encrypt: true,
+    mock: true
 };
 export const elasticsearchConnections = {
     dialect: 'elasticsearch',
     host: 'https://67a7441549120daa2dbeef8ac4f5bb2e.us-east-1.aws.found.io',
-    port: '9243'
+    port: '9243',
+    mock: true
 };
 export const publicReadableS3Connections = {
     dialect: 's3',
     bucket: 'falcon-s3-connector-test',
     accessKeyId: 'AKIAIMHMSHTGARJYSKMQ',
-    secretAccessKey: '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'
+    secretAccessKey: 'Urvus4R7MnJOAqT4U3eovlCBimQ4Zg2Y9sV5LWow',
+    mock: true
 };
 export const apacheDrillConnections = {
     dialect: 'apache drill',
@@ -280,21 +286,25 @@ export const apacheDrillConnections = {
 
     bucket: 'falcon-s3-connector-test',
     accessKeyId: 'AKIAIMHMSHTGARJYSKMQ',
-    secretAccessKey: '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'
+    secretAccessKey: 'Urvus4R7MnJOAqT4U3eovlCBimQ4Zg2Y9sV5LWow',
+    mock: true
 };
 export const sqliteConnection = {
     dialect: 'sqlite',
-    storage: `${__dirname}/plotly_datasets.db`
+    storage: `${__dirname}/plotly_datasets.db`,
+    mock: true
 };
 export const apacheImpalaConnection = {
     dialect: 'apache impala',
     host: 'impala.test.plotly.host',
     port: 21000,
-    database: 'plotly'
+    database: 'plotly',
+    mock: true
 };
 export const dataWorldConnection = {
     url: 'https://data.world/falcon/test-dataset',
-    token: 'token'
+    token: 'token',
+    mock: true
 };
 
 // TODO - Add sqlite here
